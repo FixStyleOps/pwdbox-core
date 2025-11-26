@@ -1,12 +1,12 @@
 #!/bin/bash
 # product-srv – install_step1_structure.sh
-# Create base directory structure
 
 echo "==========================================="
 echo " product-srv – Step 1: Creating Core Structure"
 echo "==========================================="
 
-read -p "Enter zone name (example: io / asia / kz): " ZONE
+echo "Available internal zones: alpha / beta / gamma"
+read -p "Enter zone: " ZONE
 
 echo "$ZONE" > /opt/product-srv-zone
 
@@ -36,7 +36,9 @@ echo "Base directory: $BASE" >> $REPORT
 echo "Date: $(date)" >> $REPORT
 
 echo ""
-echo "[OK] Base structure created."
-echo "[OK] Report saved to $REPORT"
+echo "[OK] Structure ready"
+echo ""
+
+
 
 
